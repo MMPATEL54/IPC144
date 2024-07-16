@@ -1,0 +1,24 @@
+///////////////////////////////////////////////////////////////////////////
+                              Reflection
+                          Workshop - #2 (P2)
+Full Name  : Manan Manojkumar Patel
+Student ID#: 141782227
+Email      : mananpatel6324@gmail.com	
+Section    : NDD
+
+Authenticity Declaration:
+
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1.  
+a.For the given code the outcome is 4 as we have implemented the increment before printing it thus ‘a’ which was 3 has become 4 after the 2nd line and hence 4 is be printed as the outcome.
+b.For this case the increment is implemented after the printing process is done hence the output is 3 itself.
+
+2.
+I believe that as we are using float in both the ‘price1’ and ‘price3’ the values are not matching exactly, although as we have use double we can find the exact answer as we have enter at the decelaration part. 
+
+3. 
+After running these commands in my machin I have observed that in the 1st case both ‘money’ and the number 100 are integer and we are using double’s specifier ‘lf’ for printing hence the outcome is 0 as when we use two integer to operate together the outcome is always integer, in the 2nd case we are using integer’s specifier for printing the result thus the output will be almost correct as decimal value will not be printed we cannot say that it is a completely correct answer, in case 3 we are aloting the variable money to double and the specifier is also of double as one of the variable is double and the outcome is requested in double then the answer will be completely correct althought in the 4th case the result is requested in integer and one of the variable is still aloted to double thus the resultant was a junk value as a double and an integer when operated together always give the outcome as double.

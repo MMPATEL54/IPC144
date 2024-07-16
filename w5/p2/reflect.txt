@@ -1,0 +1,17 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #5
+Full Name  : Manan Manojkumar Patel
+Student ID#: 141782227
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. Yes we can use "for" iteration constructs to do it beacuse we know that we have to take 2 rates in a day and continue taking it for 3 days as we know how many time we need to repeat the iteration so we can use it although for taking the rates of each day we need to use "do-while" loop.
+
+2. We can use 2 types of different selection constructs one is "switch case" and the other one is by using "if", I have used "if" as I find it easier to use and understand.
+
+3. When we use variables and macros instead of using hardcore "magic" numbers it makes the program user friendly and also makes makes it easier to maintain and improve the errors we could also easily use the debbuging to understand it well and also we can explore multiple outcomes from it and also in future we can make changes and use for our own benefit.  

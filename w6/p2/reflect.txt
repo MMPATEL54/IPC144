@@ -1,0 +1,17 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #6
+Full Name  : Manan Manojkumar Patel 
+Student ID#: 141782227
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. We call them parallel array. We use this type of array so that when we store these values in an array at different positions and then print them in same line without using multiple loops and we can just use one loop and print them.
+
+2. I have used for loop for this workshop as I know where to start the array with and how many indexs are there in an array. If we use another type of iteration such as do-while loop then it will repeat until the loop is wrong at least on and then it will end the loop so it will give us an extra line with junk values.
+
+3. I was facing a problem in the part where we have to take inputs for selection and then show the wprking accordingly so I had used debuging to find out the sematic error and as I had not faced any syntactic error so I have not used the debug to spot the error. 

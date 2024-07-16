@@ -1,0 +1,131 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #7
+Full Name  : Manan Manojkumar Patel	
+Student ID#: 141782227
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+1. (a) struct Player
+{
+    char player_name;
+    int no_lives;
+    int num_treasure;
+    int history_array[70];
+
+};
+struct Game
+{
+    int max_moves;
+    int path_length;
+    int bomb[70];
+    int treasure[70];
+};
+struct GameArrays {
+    char moves[70];
+    char num_array[70];
+    char bar_array[70];
+};
+(b) struct Player ply;
+struct Game gm;
+struct GameArrays ga;
+int i, j;
+double lim;
+int mod_count = 0, num_count = 0, player_moves = 0;
+int flag1 = 1, flag2 = 1, flag3 = 0, flag4 = 0;
+To make my code work without using structure I would have replace the three struct with all
+the variables decelared in them which would require a lot variables in the main body rather
+than using just the stucture's decelaration which in a way does not make any difference at
+this level but as soona as we go a level higher this method of using structure is very
+useful.
+
+2. We have used parallel arrays for storing the values of treasures and bombs and also used
+for storing history of arrays then also used for storing the moves of the player. All the 
+arrays are inter related as at first we will alloting the number of index we will require 
+to store the positions of treasure and bomb which are useful when the player starts playing the game and when he does give his move we check the if there is a bomb or treasure or if 
+we have both there and record the outputs in a array which is also parallel and the end we give them a result either when the player runs out of lives or moves.
+
+3. if (gm.max_moves != 0 && ply.no_lives != 0) 
+ {
+     do
+     {
+         printf("Next Move [1-%d]: ", gm.path_length);
+         scanf("%d", &player_moves);
+         flag1 = 1;
+         if (player_moves > gm.path_length || player_moves < 1)
+         {
+             printf("  Out of Range!!!\n");
+         }
+         else
+         {
+             flag2 = 0;
+         }
+     } while (flag2 == 1);
+
+     if (ga.moves[player_moves - 1] != '-')
+     {
+         printf("\n===============> Dope! You've been here before!\n\n");
+     }
+     else if (gm.bomb[player_moves - 1] == 1 && gm.treasure[player_moves - 1] == 1)
+     {
+         printf("\n===============> [&] !!! BOOOOOM !!! [&]\n");
+         printf("===============> [&] $$$ Life Insurance Payout!!! [&]\n\n");
+         ga.moves[player_moves - 1] = '&';
+         gm.max_moves--;
+         ply.no_lives--;
+         ply.num_treasure++;
+     }
+     else if (gm.bomb[player_moves - 1] == 1)
+     {
+         printf("\n===============> [!] !!! BOOOOOM !!! [!]\n\n");
+         ga.moves[player_moves - 1] = '!';
+         ply.no_lives--;
+         gm.max_moves--;
+     }
+     else if (gm.treasure[player_moves - 1] == 1) 
+     {
+         printf("\n===============> [$] $$$ Found Treasure! $$$ [$]\n\n");
+         ga.moves[player_moves - 1] = '$';
+         ply.num_treasure++;
+         gm.max_moves--;
+     }
+     else
+     {
+         printf("\n===============> [.] ...Nothing found here... [.]\n\n");
+         ga.moves[player_moves - 1] = '.';
+         gm.max_moves--;
+     }
+     if (ply.no_lives== 0) 
+     {
+         printf("No more LIVES remaining!\n\n");
+     }
+     else if (gm.max_moves == 0) 
+     {
+         printf("No more MOVES remaining!\n\n");
+     }
+ }
+ else
+ {
+     printf("\n##################\n");
+     printf("#   Game over!   #\n");
+     printf("##################\n\n");
+     flag3 = 1;
+ }
+ The most deepest nested statement is from 229 to 296 where I am first checking if the 
+number of lives is not 0 and the the number of moves is not 0. Once the has been varified 
+then only the program goes inside the loop or else it does not go inside and print the else
+ statement. If the condition is ture then it takes the player's input on which number does 
+he want to move if the inut value is less than 1 or more than the number of treasure and 
+booms store then it shows an error and ask for the input again. If the player enters a 
+vaild move then the value is compaired from an index number less than the players enter as 
+the player is asked to enter a value from 1 to the number of entries take and in arraies as 
+the value start getting stored from index number 0 so the value is varified from enter of 
+treasure and boobs if there is a boob then it display a message and reduces the number of 
+moves, the number of lives and does not increase or decrease the number of treasure found 
+and if the player successed in find a treasure then it increase the number of treasure and 
+reduces the number of moves and the number of lives remain same and for the last case if 
+the player managed to secure both a treasure and there is a boob as well then it reduces 
+the number of moves, reduces the number of lives and increase the number of treasure. The point to be noted is everytime there is an increament or decrement by 1 only.

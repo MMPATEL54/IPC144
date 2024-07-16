@@ -1,0 +1,77 @@
+1. The string.h library was quite useful to me in MS2 as I do not need to write 
+extra codes for some simple part like counting the number of letters to word and 
+to varify the number of letters in a word or to check if it matches with the 
+input or not, I had used these library in two functions one is inputCharOption
+and inputCString in inputCString function the user need to enter a word and the 
+code will check if input has the exact number of letters as of the word given in 
+the code if it matchs then the word is returned where as if it does not matchs 
+then it shows error and asks the user to enter another word until the user's 
+input does not satisfy the condition I had used strlen which counts the number of 
+letters in a word and in the funtion inputCharOption we use strlen but in this 
+funtion we use it in a different manner that is we have a specific word in our
+code which has some letters and we ask the user to enter any letter from the 
+alphabetes and compair the user's input with the given word if it matchs then 
+it ends the loop and returns the letter or it keeps on repeating the loop as 
+long as the user's input and the letters in the given word does not match it was 
+a very long process in MS1 but later when we were allowed to use the string.h 
+library in the MS2 I found it quite easy. 
+
+2. There are two ways to copy a string one is using strcpy where we copy the
+ whole string and print it when needed and the other one is strncpy where we 
+copy a specific number of string and print or use it the string when needed the 
+strncpy is better than strcpy as when we use strcpy we might sometime end up 
+overflowing the the string we are copying to. I had used the strcpy in 
+the function inputPhoneData where I used it to display the contact number of 
+the patient depanding upon the type of contact number it is either is it for
+home, work, or work I could have used strncpy too so that I don't overflow 
+the variable I have mentioned below how the code would look like:
+void inputPhoneData(struct Phone* phone)
+{
+    int Sel;
+    printf("Phone Information\n"
+        "-----------------\n"
+        "How will the patient like to be contacted?\n"
+        "1. Cell\n"
+        "2. Home\n"
+        "3. Work\n"
+        "4. TBD\n");
+    printf("Selection: ");
+    Sel = inputIntRange(1, 4);
+    printf("\n");
+    if (Sel == 4)
+    {
+        strncpy(phone->description, "TBD", PHONE_LEN);
+        phone->number[0] = '\0';
+    }
+    else {
+        if (Sel == 1)
+            strncpy(phone->description, "CELL", PHONE_LEN);
+        if (Sel == 2)
+            strncpy(phone->description, "HOME", PHONE_LEN);
+        if (Sel == 3)
+            strncpy(phone->description, "WORK", PHONE_LEN);
+        printf("Contact: %s\n", phone->description);
+        printf("Number : ");
+        inputCString(phone->number, PHONE_LEN, PHONE_LEN);
+        putchar('\n');
+        clearInputBuffer();
+    }
+}
+
+3. I have used a function called sortingAppointment where I am using a total of three 
+structures the first one is and the major structure I have used is ClinicData which 
+consists of two more structures one is Patient and the other one is Appointment so to 
+arrange the appointments in an ascending order I had to call Appointment structure to 
+compair the dates, now inside the Appointment structure I have used another two structures 
+one of them is Time and the other one is Date inside Time there are two variables one of 
+them is hour and the other one is min once and inside the Date structure I have used year, 
+month, and day as variables. So I first start comparing the dates using the years and which 
+which ever one is the lowest comes first and amoung the appiontments which have the same 
+years they are then compared with months and again which ever ones are lowest are placed 
+first and similarly if there are any appointments with the same months will be compared in 
+dates and the one that has the lowest day will be printed first. I use two for loops where 
+in the first loop picks a specific appointment to begin with it starts with one less than 
+size and the other loop starts will index value 0 and then we put the second loop inside 
+the first loop and inside the second loop we put the nested if conditions to get a 
+particular case and then start placing them in order of the time and later when this 
+function is called to print the available appointments it display them in ascending order. 

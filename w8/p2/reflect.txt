@@ -1,0 +1,60 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #8
+Full Name  : Manan Manojkumar Patel
+Student ID#: 141782227
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. In this function we convert the lbs into kgs, there are two cases the first one is
+when there is no value stored in the kg variable so when we calculate the value of the
+kgs using a constant variable and then alot the variable to the kg using value and then
+in the other case where there is a variable stored in it then we use the same method to
+ get kgs but just this time we alot the variable to kg using address of the variable we
+ can create two more cases like this:
+a.
+double convertLbsKg1(const double* lbs, double* kg)
+{
+	double i;
+	i = *lbs / CONVERT;
+	return(i);
+}
+b.
+double convertLbsKgs2(const double* lbs, double* kg)
+{
+if (kg != NULL)
+	{
+		*kg = *lbs/CONVERT;
+	}
+return (kg);
+}
+
+2. In this week's workshop i have used multiple functions in which i am calling other 
+functions where i had done some calculations and returned the values and now i am using 
+their values to be printed in the displaying function for example convertLbs where i am 
+calling convertLbsKg and convertLbsG to store the outputs another example is
+calculateReportData where i am using convertLbsKg, convertLbsG, calculateServings and 
+calculateCostPerServing where i am using the valriables stored in their funtions to be 
+called and utilised to store them in a new variable which are then called in the function 
+displayReportData which is used to print the data in table format. And there is the start 
+function which is used to call the functions and run the funtions in a loop and then take 
+multiple inputs and later at the end of the funtions the same vaues are used to print as 
+an output. 
+
+3. I have used the concept of header file for the first timein my life it was a little 
+tough at first but as and when i started working on the workshop i slowly got a grip on 
+it and by the time I was on the second part of the workshop i could easly use it. I think 
+that this feature is quite useful in this field then we can create a minimum of three 
+teams who can work of one single project without creating any confusion like the first 
+team can work on the main body like how the output will look like and the second team 
+can work on the calculations and displaying the functions and calculation function 
+and the thrid team can work on the header file where they can work on creating macros 
+and functions. I have used many funtions which are used for calculating the convertions 
+and the displaying functions as well which reduced the size of my main file and also made 
+it easier to understand another reader or fellow members and understand the concept. For example struct CatFoodInfo and reportData and i have also used any function to display the 
+functions displayCatFoodHeader, displayCatFoodData, displayReportHeader and displayFinalAnalysis and i have also used many calculating functions like calculateCostPerCal, calculateCostPerServing, calculateServings, convertLbsKg, and convertLbsG now i can just call the function in my main body by just mentioning the header 
+file at the top.

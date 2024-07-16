@@ -1,0 +1,17 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #4
+Full Name  : Manan Manojkumar Patel
+Student ID#: 141782227
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. In case of a while loop, it first checks the input from the user befor excuting it if the conditions and the input does not match then the program will not run completely, on the other hand in do-while loop the program is executed regardless of the input and the condition match or not if the condition does not match, it will still run one time. We can use a while and a do-while loop in part 2 of this weeks workshop for example for taking the input for how much grocery is to be bought we can use while loop where as for the part where we have to pick a selected number of fruits and vegetables then we will have to use a do-while loop. 
+
+2. In the second part of part-2 where we have a pick a sepecific number of fruits and vegetales we have to take multiple posibilities hence we are going to have multiple outcomes at that point we will have to use if/else-if condition to get a correct output of each input. For example for if we have given an input of 10 apples for the first case then at the time of picking the apples we can give inputs as -1,40,0 or any number for that matter to get proper output we will have to use if/else-if for each of case.
+
+3. To complete this program I had divided the hole part in multiple sections and just successfully tried completing then to get a final program to start with I worked on how to take the initail amount of each fruit and vegetable and then to make sure it does not take any negative inputs as it is practically not possible hence I used if conditions to make sure that there are not false inputs and then after completing that for the picking part I again used if condition to run the picking part for each grocery item inside that I used a do-while loop to take multiple enteries for each grocery and stop when it sufficient amount of each grocery was taken, for this section of the code I had to use if/else if to check each input and give a proper result. I had repeated the same process for each grocery item. At the end of the program it gives an option to user to again begin the hole process using 0 & 1, I had created this loop very first even before taking in any inputs for the grocery, I had used do-while loop for this part.

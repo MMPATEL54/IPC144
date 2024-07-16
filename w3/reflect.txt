@@ -1,0 +1,19 @@
+///////////////////////////////////////////////////////////////////////////
+                              Reflection
+                          Workshop - #3 (P2)
+Full Name  : Patel Manan Manojkumar
+Student ID#: 141782227
+Email      : manan06032004@gmail.com
+Section    : NDD
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. There are total of 15 variables and there is one that is constant variable. I have used the constant variable to convert the grams into pounds the variable used is GRAMS_IN_LBS, I have used tc1, tc2, tc3, tc4 and tc5 which stands for type of coffee, there are only three types which are light, medium and rich but in tc1 to tc5 I am storing the type of coffees such as light, medium or rich. Then i have used bw1, bw2, bw3, bw4, and bw5 which are used to store the bag weight or in other words to store the quantity of the coffee, the quantity is to be entered in 2 ways either using in grams which is 250g, 500g or 1000g or the other way is 1-4 cups, then there is 5-9 cups and the last one is 10 or more than 10 cups. I have also used yn1, yn2, yn3, yn4 and yn5 which i have used to take in the input for the cream if the customer would like to have a cream in their drink or not if they want a drink then you can say 'y' or 'Y' or if they do not want then they can say 'n' or 'N'.
+
+2.  (bw5 == 1000) || (bw5 >= 10) && (bw5 <= 1000) This is a good example of logical and relational expression i have used this at the end of the programm in line number 90. In this we are taking an input from the user of how much coffe does he want to order, they can either say 1000 grams or they can say 10 or more than 10 cups if they say in terms of cups then if the number is greater than or equal to 10 or less than or equal to 1000 then only it will give 1 as an output or else it will give a 0. I am using AND operator for the comparision the second part and I am compairing the hole operator using OR operator to campair it with 1000.
+
+3.DeMorgan's law state that if an AND operator is in operated completely with NOT operator then the resultant operator is ELSE operator for example: !(a==b && c==b) = (a==b || c==b) vice versa. I have not used DeMorgan's rule in my program although I could have used it in line 90 of my program instead of using (bw5 == 1000) || (bw5 >= 10) && (bw5 <= 1000) i could have use it like !((bw5 == 1000) && !((bw5 > 10) || (bw5 <= 1000))) using DeMorgans rule and now if we give the input of 10 or more than 10 then the resultant output will be true or 1.

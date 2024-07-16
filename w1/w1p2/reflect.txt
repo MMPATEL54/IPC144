@@ -1,0 +1,21 @@
+###########################################################################
+
+                              Reflection
+                             Workshop - #1
+Full Name  : Manan Patel	
+Student ID#: 141782227
+Email      : mmpatel54@myseneca.ca	
+Section    : NDD
+
+Authenticity Declaration:
+
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+###########################################################################
+
+1. After complication of my grade 12in 2022 I had opted for a course provided by a local computer classes known as Amee computer classes in the course they taught me the C programming language using code block editor they had also taught me some concepts of 0 and 1 along with the history of computer although not in depth I had learned concepts such as for, while and do while and also conditional programs such as if, else if and if else if. they had alo taught us about functions and how to creat them.
+
+2. From my understanding, every editor has there own functions in it which helps the users from writing less commands and there are also some universal functions which not only helps the users but also the editors to function easily so when we use those fuction and creat a collection of commands it then goes to the operating system with converts the commands into electric signal which also known as '1' and '0' where '1' means on and '0' means off. The computer than processes the commands step by step in the order given by the user and the resultant is then given back to operating system which converts the 0 and 1 and displays the result on our monitors.
+
+3.I currently do not have any idea about what will I be achieving from this program althought I will increase my knowledge in the field on programming at the end of this journey and with help of my professors and my class mates I will be soon be able to set a goal for myself for a better future.

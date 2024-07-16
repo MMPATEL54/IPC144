@@ -1,0 +1,14 @@
+In line number 79 of your output:
+The output should be:
+Enter the patient number: 1398
+                           ^
+But your output is: 
+Enter the patient number: 1064
+                           ^
+
+Unmatched character details:
+The character in column 28 is supposed to be:
+  [3] ASCII code(51)
+but you printed
+  [0] ASCII code(48)
+
